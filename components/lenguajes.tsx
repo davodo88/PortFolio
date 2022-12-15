@@ -5,9 +5,8 @@ import Css from '../public/images/logos/cssLogo.png'
 import Js from '../public/images/logos/JavaScriptLogo.png'
 import Rea from '../public/images/logos/ReactLogo.png'
 import Tail from '../public/images/logos/TailwindLogo.png'
-import 'animate.css'
 import { AnimationOnScroll } from "react-animation-on-scroll";
-
+import "animate.css";
 
 
 const lenguajes = [
