@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/presentacion.jsx", "components/atoms/TextDavid.jsx", "components/navBar.jsx", "pages/index.jsx", "components/atoms/timeTable.jsx", "components/atoms/timeTable.jsx"],
   "exclude": ["node_modules"]
 }
