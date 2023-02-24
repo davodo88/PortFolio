@@ -15,6 +15,9 @@ module.exports = {
       },
       fontSize:{
         ultra:'100px',
+      },
+      keyframes: {
+        
       }
     },
   },

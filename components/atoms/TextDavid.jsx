@@ -6,7 +6,7 @@ import TypeIt from 'typeit-react';
 function TextDavid() {
 
   return (
-    <div className="flex flex-col text-white m-auto">
+    <div className="flex flex-col text-black m-auto">
       <p className="flex font-Code text-2xl lg:text-5xl gap-y-10">
         <TypeIt options={{
           strings: [

@@ -1,5 +1,6 @@
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 import React, { useState } from 'react'
 import { classNames } from '../utils/utils';
 
@@ -23,41 +24,32 @@ const NavBar = () => {
         menu ? setMenu(false) : setMenu(true)
     };
 
-
+ 
 
   return (
     <div
-      className="relative drop-shadow-[0_5px_10px_#fffffff7] bg-gradient-to-t from-slate-500 to-slate-700 
-        flex flex-col h-max md:flex-row justify-center py-4 font-Code text-bone rounded-b-xl"
+      className={
+        classNames("drop-shadow-lg shadow-slate-50 bg-zinc-800 text-white w-screen h-16 rounded-br-xl sticky -top-12",)}
     >
-      <ul className="hidden md:flex gap-x-10">
-        {Options.map((Option, index) => {
-          return (
-            <li
-              key={index}
-              className="flex text-xl hover:scale-90 cursor-pointer"
-            >
-              <a href={Option.target}>{Option.title}</a>
-            </li>
-          );
-        })}
-      </ul>
+      <h1 className='absolute left-5 top-5 m-auto w-max hover:underline'>
+        David.SR
+      </h1>
       <button
         onClick={showMenu}
-        className={classNames("w-max ml-4 md:hidden text-lg ", )}>
+        className={classNames("w-max absolute right-5 top-5 text-lg text-white",
+          menu ? "" : "" )}>
         <FontAwesomeIcon icon={menu ? faXmark : faBars } />
       </button>
-      {menu && 
         <div 
-            className="w-[220px] h-[270px] 
-            bg-slate-300/25 rounded-xl backdrop-blur-sm
-            absolute top-20 left-[22%] flex justify-center">
-            <ul className='flex flex-col text-start'>
+            className={classNames(
+              "absolute top-0 z-10 transition-all duration-1000 ease-in-out  bg-zinc-800 text-white w-1/2 md:w-1/3 h-96 mt-16 rounded-br-xl",
+              menu ? "left-0" : "-left-full" )}>
+            <ul className='flex flex-col h-full w-1/2 mx-auto justify-evenly items-center hover:bg-red-500'>
             {Options.map((value, index) => {
                 return (
                   <li
                     key={index}
-                    className="flex my-auto hover:scale-90 text-xl"
+                    className="flex hover:underline text-xl md:text-2xl"
                   >
                     <a href={value.target}>{value.title}</a>
                   </li>
@@ -65,7 +57,7 @@ const NavBar = () => {
             })}
             </ul>
         </div>
-      }
+      
     </div>
   );
 }

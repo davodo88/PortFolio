@@ -6,8 +6,3 @@
 html {
     scroll-behavior: smooth;
 }
-
-.lenguajes {
-    box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.50),
-                inset -4px -4px 5px rgba(0, 0, 0, 0.50) ;
-}
