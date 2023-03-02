@@ -21,7 +21,7 @@ class MyDocument extends Document {
             content="MyPortfolio"
           />
         </Head>
-            <body>
+        <body >
                 <Main />
                 <NextScript />
             </body>

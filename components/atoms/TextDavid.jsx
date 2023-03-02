@@ -6,17 +6,18 @@ import TypeIt from 'typeit-react';
 function TextDavid() {
 
   return (
-    <div className="flex flex-col text-black m-auto">
-      <p className="flex font-Code text-2xl lg:text-5xl gap-y-10">
+    <div className="flex flex-col text-black mx-auto">
+      <h1 className="flex text-center font-Code text-2xl lg:text-5xl gap-y-10">
         <TypeIt options={{
           strings: [
             "Hi! I'm DAVID, ",
-            "a Web Developer. "
+            "a Junior FrontEnd ",
+            "Developer!"
             ],
             speed:180,
             waitUntilVisible: true,
         }} />
-      </p>
+      </h1>
     </div>
   );
 }
