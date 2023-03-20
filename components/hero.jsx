@@ -33,7 +33,7 @@ const Hero = () => {
           <h1 className='text-center text-xl my-5'>
             Lorem ipsum dolor sit amet.
           </h1>
-          <button className='border-[1px] w-max mx-auto px-4 rounded 
+          <button className='border-[1px] w-max mx-auto px-6 py-2 rounded 
             shadow-sm hover:shadow-inner shadow-black hover:shadow-black'>
             <a href='#templates'> see more </a>
           </button>  

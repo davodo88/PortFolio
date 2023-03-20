@@ -19,21 +19,23 @@ const Templates = () => {
   return (
     <div id='templates'
     className='w-full h-max p-10 '>
-      <h1 className='text-center text-3xl underline'>
+      <h1 className='text-center text-3xl '>
         my <span className='font-bold '>W</span>orks
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 p-8'>
         {projects.map((template, index) => {
           return (
-            <div key={index} 
+            <button key={index} 
             className="p-4 shadow-lg transition-all 
             hover:scale-105 relative group">
+              <a href={ template.url }>
               <Image src={template.image} 
                 width={""} 
                 height={""} 
                 alt="Templates"
                 className='object-cover drop-shadow-xl ' />
-            </div>
+              </a>
+            </button>
           )
         })}
       </div>

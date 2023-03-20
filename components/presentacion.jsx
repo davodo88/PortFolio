@@ -21,7 +21,7 @@ const Presentacion = () => {
           </div>
         </div>
         <TextDavid />
-        <button className='border-[1px] w-max mx-auto px-4 rounded 
+        <button className='border-[1px] w-max mx-auto px-6 py-2 rounded 
             shadow-sm hover:shadow-inner shadow-black hover:shadow-black'> 
           <a href='#hero'>
             see more

@@ -12,7 +12,7 @@ const BotonToTop = () => {
 
   return (
         <button onClick={onClickUp}
-        className="text-black text-xl w-12 h-12 ml-auto mr-8 mb-8">
+        className="text-black text-xl w-12 h-12 ml-auto mr-8 mb-">
             <FontAwesomeIcon icon={faCircleArrowUp} />
         </button>
   )

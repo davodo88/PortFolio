@@ -28,7 +28,7 @@ const NavBar = () => {
   return (
     <div
       className={
-        classNames("drop-shadow-lg shadow-slate-50 bg-zinc-800 text-white w-screen h-16 rounded-br-xl sticky -top-12 z-50",)}
+        classNames("drop-shadow-lg shadow-slate-50 bg-zinc-800 text-white w-full h-16 rounded-br-xl sticky -top-12 z-50",)}
     >
       <h1 className='absolute left-5 top-5 m-auto w-max hover:underline'>
         David.SR
@@ -42,16 +42,16 @@ const NavBar = () => {
       <div 
         className={classNames(
           "absolute top-0 z-10 transition-all duration-1000 ease-in-out  bg-zinc-800 text-white w-1/2 md:w-1/3 h-96 mt-16 rounded-br-xl",
-        menu ? "left-0" : "-left-full md:-left-[33%]" )}>
+        menu ? "left-0 h-[800px] md:h-[950px]" : "-left-full md:-left-[50%]" )}>
         <ul className='flex flex-col h-full w-1/2 mx-auto justify-evenly items-center '>
         {Options.map((value, index) => {
             return (
-              <li
+              <button onClick={showMenu}
                 key={index}
                 className="flex hover:underline text-xl md:text-2xl"
               >
                 <a href={value.target}>{value.title}</a>
-              </li>
+              </button>
             );
         })}
         </ul>
